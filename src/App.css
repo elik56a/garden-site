@@ -1,0 +1,445 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin:0;
+    padding: 0;
+
+}
+h1,h2,h3,h4,h5,p,span{
+    font-weight: 200;
+}
+.nav-photo{
+  width: ;
+}
+/*navbar show after scrolling */
+.colored-nav{
+  background: rgb(131, 131, 131);
+  width: 100vw;
+  height: 20vh;
+  position: fixed;
+  z-index: 2;
+  font-weight: 200;
+  transition: all 0.5s ease-in-out;
+}
+.colored-nav ul{
+  list-style: none;
+  cursor: pointer;
+  margin:auto;
+}
+.colored-nav a{
+  text-decoration: none;
+    float: left;  
+   color:rgb(255, 251, 251);
+   margin: 3rem 0 0 2rem;
+   font-size: 1.3rem;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+   letter-spacing: 1.3px;
+}
+.colored-nav a:hover{
+  color: rgb(150, 41, 27);
+  letter-spacing: 1.7px;
+
+}
+.colored-nav ~ .contact-number{
+  background: #f2431c;
+}
+/* standart navbar */
+.navbar {
+  width: 100vw;
+  height: 20vh;
+  background: #fff;
+  position: fixed;
+  z-index: 2;
+  font-weight: 200;
+
+}
+.navbar ul{
+  margin:auto;
+  list-style: none;
+  cursor: pointer;
+}
+.nav-title{
+    font-size: 2.3rem;
+    position: absolute;
+    right: 10rem;
+    color:rgb(0, 0, 0);
+}
+.nav-small-title{
+    margin:0;
+    position: relative;
+    bottom: 1.5rem;
+    right: 12rem;
+    font-size: 1.2rem;
+
+}
+  .navbar a{
+    text-decoration: none;
+      float: left;  
+     color:rgb(66, 66, 66);
+     margin: 3rem 0 0 2rem;
+     font-size: 1.3rem;
+     -webkit-transition: all 0.5s ease-in-out;
+     transition: all 0.5s ease-in-out;
+     letter-spacing: 1.3px;
+    
+   }
+   .navbar a:hover{
+     color: rgb(150, 41, 27);
+     letter-spacing: 1.7px;
+   
+   }
+.contact-number{
+    background: rgb(27, 64, 98);
+    padding: 1rem;
+    color:#fff;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+}
+.contact-number:hover{
+    background: #000;
+}
+
+/* show case */
+.showcase-container{
+    width: 100vw;
+    height: 50vh;
+    background: url('https://images.unsplash.com/photo-1458245201577-fc8a130b8829?ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 25rem;
+}
+
+
+/* lawyer photo and office description */
+.lawyer-main{
+    display: grid;
+    grid-template-areas: " img text";
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(233, 233, 233);
+    position: relative;
+    height: 95vh;
+}
+.lawyer-img{
+      grid-area: img;
+      height: 100%;
+}
+    .lawyer-text{
+        grid-area: text;
+       color:rgb(43, 43, 43);
+       font-size: 2rem;
+        line-height: 2.2;
+        margin: 3rem auto;
+        padding: 4rem 1rem 0 7rem;
+        height: 100%;
+        /* text-align: right; */
+    }
+
+  /* main info */
+
+  .maininfo-container{
+      width: 100vw;
+      height: 70vh;
+      margin: 3rem 0 0 0 ;
+      text-align: center;
+  }
+  .maininfo-title{
+      padding: 0;
+      margin: 0;
+      font-size: 2rem;
+      
+  } 
+
+  .title-hr{
+    width: 22%;
+     }
+
+  .maininfo-text{
+      font-size: 1.3rem;
+      padding: 0 6rem;
+      line-height: 2.2;
+  }
+
+  /* subjects of information */
+  .subjects-container{
+    
+    padding: 1rem 1.5rem 0 0;
+    margin: 0 auto;
+    grid-gap: 1rem ;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .subjects-title{
+      display: inline;
+      margin:4rem 0 0 2rem;
+      padding: 0;
+ 
+  }
+  .subject-img{
+    display: block;
+    width: 100%;
+    height: 180px;
+  }
+  .subject-card{
+    color:rgb(29, 29, 29);
+    background: rgb(233, 233, 233);
+    border-radius: 5px;
+    position: relative;
+    width: 22vw;
+    height: 75vh;
+  
+    margin:7rem 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411)
+  }
+  
+.subject-title{
+    color: rgb(150, 41, 27);
+  text-transform: uppercase;  
+  font-size: 1.6rem;
+  padding: 1rem 0.5rem ;
+  margin: 0;  
+ 
+}  
+.subject-text{
+      font-size: 1.15rem;
+      margin:0;
+      padding: 1.5rem;
+      padding-bottom: 0.8rem;
+    
+ } 
+ .subject-btn {
+    border: solid 2px rgb(150, 41, 27);;
+    background: transparent;
+    padding: 0.8rem 2rem;
+    margin:0 0 2rem 0 ;
+    /* margin: 2rem 0.2rem 0.5rem 0.2rem; */
+    border-radius: 1px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* margin-left: 0.7rem;
+    position: absolute;
+    bottom: 0.6rem;
+    left: 32vh; */
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  
+  }
+  .subject-btn:hover{
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    letter-spacing: 1.3px;
+    background: rgb(206, 143, 143);
+    cursor: pointer;
+  }
+
+  /* video section */
+
+   .video-container{
+       background: #82838f7c;
+       height: 100vh;
+       padding:2rem 0 ;
+       display: grid;
+       margin:  auto;
+      grid-template-columns: repeat(2,1fr);
+   }
+  .news-img{
+    margin: 4rem;
+  }
+
+  .video-title{
+    
+
+}
+
+
+
+
+   /* Pricing */
+   .pricing-container{
+     background: #2c3e50;
+     width: 100%;
+     height: 52vh;
+     color:#fff;
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+   }
+   .pricing-img{
+    font-size: 3rem;
+    padding: 5rem 0 0 0;
+   }
+   .pricing-title{
+     margin:1.2rem;
+     font-size: 1.6rem;
+   }
+   .pricing-text{
+     padding:0 2rem;
+   
+   }
+   
+   /*contact section */
+
+   .form-container {
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;                                                     
+  }
+  .user-name, .phone ,textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  textarea{
+    height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 0.8rem;  
+  }
+  .user-nameת .phone{
+  
+    margin: 1rem 0 0 0;
+  }
+   .row {
+        width: 40%;
+        margin: 0.5rem auto;
+      }
+  
+  input[type=submit] {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 65px;
+   width: 40.2vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:0 auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #25303b;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* offices section */
+  .offices-container{
+    /* position: absolute; */
+    background: #6b95c0ec;
+    height: 95vh;
+  
+  }
+  .map{
+      padding: 2rem;
+    margin:0; 
+    
+
+  }
+.map-title{
+  text-align: right;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.map-text{
+    text-align: right;
+    margin-top: 0;
+}
+.offices-list{
+    /* text-align: center; */
+    /* padding-right: 50vw; */
+    font-size: 1.3rem;
+    font-weight: 200;
+    /* display: inline-block; */
+    padding-right: 50vw;
+
+    
+}
+
+  /* footer */
+
+  .footer-container{
+      background: #000;
+      width: 100%;
+      height: 28vh;
+      color:#fff;
+      display: grid;
+      grid-template-areas: "img social link";
+      grid-template-columns: repeat(3,1fr)
+  }
+.footer-links{
+    grid-template: link;
+    text-align: right;
+    padding: 2rem 0;
+}
+  .footer-title{
+margin:0;
+padding: 1rem 4rem;
+/* text-align: right; */
+  }
+  .footer-link{
+    padding: 0 4rem;
+      /* text-decoration: none; */
+      color:#fff;
+      cursor: pointer;
+      text-align: right;
+  }
+.footer-social{
+    grid-template: social;
+    /* padding: 2rem 0; */
+    margin-top:1rem;
+}
+.social-title{
+  padding: 1rem 0 0 0;
+}
+  .footer-icon{
+      font-size: 3rem;
+      padding:  0 2rem;
+  }
+  .footer-social a{
+      color:#fff;
+      transition:  all 0.5s ease-in-out;
+      text-decoration: none;
+  }
+  .footer-social a:hover{
+   color:#345b81;
+   transition:  all 0.5s ease-in-out;
+}
+
+  .footer-img{
+      grid-template: img;
+
+  }
+  .footer-img img{
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      padding: 2rem 0 0 0   ;
+      filter:grayscale(50%)
+  }
+
+  .footer-c{
+    text-align: left;
+    background: #000;
+    color: #fff;
+    font-size: 1.3rem;
+  }
